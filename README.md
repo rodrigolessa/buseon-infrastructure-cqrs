@@ -1,2 +1,2 @@
-# event-driven-framework
-Framework for CQRS and Event Sourcing
+# FluxOE Framework
+Flow of Events - Framework for Event-Driven + CQRS and Event Sourcing
