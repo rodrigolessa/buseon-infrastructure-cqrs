@@ -1,4 +1,4 @@
-namespace Buseon.Infrastructure.CQRS.Configurations;
+namespace Buseon.Infrastructure.Configurations;
 
 public static class ApplicationIdProvider
 {

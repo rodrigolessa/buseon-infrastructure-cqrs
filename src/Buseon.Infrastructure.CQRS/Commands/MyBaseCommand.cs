@@ -1,5 +1,6 @@
+using Buseon.Infrastructure.Abstractions;
+using Buseon.Infrastructure.Configurations;
 using Buseon.Infrastructure.CQRS.Abstractions;
-using Buseon.Infrastructure.CQRS.Configurations;
 
 namespace Buseon.Infrastructure.CQRS.Commands;
 
