@@ -1,0 +1,1 @@
+namespace Buseon.Infrastructure.CQRS.Abstractions.Handlers;

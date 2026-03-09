@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.CQRS", "src\Buseon.Infrastructure.CQRS\Buseon.Infrastructure.CQRS.csproj", "{B267C4CC-DF6F-4BAD-BCF3-85EC6EA990EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Files", "Project Files", "{3A5EF981-2CDB-4347-8DA9-BC1B0D099F5E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure", "src\Buseon.Infrastructure\Buseon.Infrastructure.csproj", "{E21B9B64-A32E-4FEB-84DD-D3692068792E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B267C4CC-DF6F-4BAD-BCF3-85EC6EA990EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B267C4CC-DF6F-4BAD-BCF3-85EC6EA990EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B267C4CC-DF6F-4BAD-BCF3-85EC6EA990EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B267C4CC-DF6F-4BAD-BCF3-85EC6EA990EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21B9B64-A32E-4FEB-84DD-D3692068792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21B9B64-A32E-4FEB-84DD-D3692068792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21B9B64-A32E-4FEB-84DD-D3692068792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21B9B64-A32E-4FEB-84DD-D3692068792E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
