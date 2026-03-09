@@ -33,34 +33,28 @@ public abstract class MyBaseCommand : ICommand
         UserEmail = userEmail;
         OccurredAt = clock.UtcNow();
         
-        SetId(messageId);
-        SetIdempotencyKey(idempotencyKey);
+        MessageId = SetId(messageId);
+        IdempotencyKey = SetIdempotencyKey(idempotencyKey);
+        ApplicationId = SetApplicationId(applicationId);
         SetSagaProcessKey(sagaProcessKey);
-        SetApplicationId(applicationId);
     }
 
-    private void SetId(string? id)
+    private static string SetId(string? messageId)
     {
-        if (string.IsNullOrWhiteSpace(id))
+        if (string.IsNullOrWhiteSpace(messageId))
         {
-            MessageId = Ulid.NewUlid().ToString();
+            return Ulid.NewUlid().ToString();
         }
-        else
-        {
-            MessageId = id;
-        }
+        return messageId;
     }
     
-    private void SetIdempotencyKey(string? idempotencyKey)
+    private static string SetIdempotencyKey(string? idempotencyKey)
     {
         if (string.IsNullOrWhiteSpace(idempotencyKey))
         {
-            IdempotencyKey = Ulid.NewUlid().ToString();
+            return Ulid.NewUlid().ToString();
         }
-        else
-        {
-            IdempotencyKey = idempotencyKey;
-        }
+        return idempotencyKey;
     }
     
     private void SetSagaProcessKey(string? sagaProcessKey)
@@ -75,15 +69,12 @@ public abstract class MyBaseCommand : ICommand
         }
     }
     
-    private void SetApplicationId(string? applicationId)
+    private static string SetApplicationId(string? applicationId)
     {
         if (string.IsNullOrWhiteSpace(applicationId))
         {
-            ApplicationId = ApplicationIdProvider.Get();
+            return ApplicationIdProvider.Get();
         }
-        else
-        {
-            ApplicationId = applicationId;
-        }
+        return applicationId;
     }
 }

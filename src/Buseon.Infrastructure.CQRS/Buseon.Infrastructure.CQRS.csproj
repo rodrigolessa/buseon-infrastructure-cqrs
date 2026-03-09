@@ -1,17 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
 
-  <ItemGroup>
-    <PackageReference Include="Ulid" Version="1.4.1" />
-  </ItemGroup>
+        <PackageId>Buseon.Infrastructure.CQRS</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Rodrigo Lessa</Authors>
+        <Company>Buseon</Company>
+        <Description>CQRS abstractions and infrastructure for Buseon platform</Description>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Buseon.Infrastructure\Buseon.Infrastructure.csproj" />
-  </ItemGroup>
+        <PackageTags>CQRS messaging event-sourcing</PackageTags>
+        <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Ulid" Version="1.4.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Buseon.Infrastructure\Buseon.Infrastructure.csproj"/>
+    </ItemGroup>
 
 </Project>
