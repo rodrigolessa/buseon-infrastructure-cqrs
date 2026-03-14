@@ -9,12 +9,16 @@
         <Version>0.1.0</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
-        <Description>Mediator pattern</Description>
+        <Description>Decoupling request from handler - Mediator pattern</Description>
         
         <PackageTags>Mediator CQRS messaging</PackageTags>
         <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
 
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="buseon.infrastructure.cqrs" Version="0.1.1" />
+    </ItemGroup>
 
 </Project>

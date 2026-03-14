@@ -1,10 +1,7 @@
-using Buseon.Infrastructure.Mediator.Abstractions;
+using Buseon.Infrastructure.CQRS.Abstractions;
 
 namespace Buseon.Infrastructure.Mediator.Abstractions;
 
-/// <summary>
-/// Desacoplar request e handler
-/// </summary>
 public interface IRequestDispatcher
 {
     Task<TResponse> ProcessAsync<TRequest, TResponse>(TRequest request, CancellationToken cancellationToken = default)

@@ -1,4 +1,4 @@
-using Buseon.Infrastructure.Mediator.Abstractions;
+using Buseon.Infrastructure.CQRS.Abstractions;
 
 namespace Buseon.Infrastructure.Mediator.Abstractions;
 

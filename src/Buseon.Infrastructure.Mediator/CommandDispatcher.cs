@@ -1,9 +1,9 @@
 using Buseon.Infrastructure.CQRS.Abstractions;
 using Buseon.Infrastructure.CQRS.Abstractions.Handlers;
-using Buseon.Infrastructure.CQRS.Mediator.Abstractions;
+using Buseon.Infrastructure.Mediator.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Buseon.InfrastructureMediator;
+namespace Buseon.Infrastructure.Mediator;
 
 public class CommandDispatcher(IServiceProvider serviceProvider) : ICommandDispatcher
 {
