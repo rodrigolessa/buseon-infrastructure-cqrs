@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
 
         <PackageId>Buseon.Infrastructure.CQRS</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.1.1</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
         <Description>Separate commands from queries, write and read operations - CQRS abstractions and infrastructure for Buseon platform</Description>
