@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Files", "Project Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure", "src\Buseon.Infrastructure\Buseon.Infrastructure.csproj", "{E21B9B64-A32E-4FEB-84DD-D3692068792E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PR Templates", "PR Templates", "{7AC8B65F-52A6-4496-B0DB-246C91DF2708}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pull Request Templates", "Pull Request Templates", "{7AC8B65F-52A6-4496-B0DB-246C91DF2708}"
 	ProjectSection(SolutionItems) = preProject
 		.github\PULL_REQUEST_TEMPLATE\bug_fix.md = .github\PULL_REQUEST_TEMPLATE\bug_fix.md
 		.github\PULL_REQUEST_TEMPLATE\feature.md = .github\PULL_REQUEST_TEMPLATE\feature.md
