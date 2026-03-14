@@ -3,7 +3,7 @@ using Buseon.Infrastructure.CQRS.Abstractions.Handlers;
 using Buseon.Infrastructure.CQRS.Mediator.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Buseon.Infrastructure.CQRS.Mediator;
+namespace Buseon.InfrastructureMediator;
 
 public class CommandDispatcher(IServiceProvider serviceProvider) : ICommandDispatcher
 {
