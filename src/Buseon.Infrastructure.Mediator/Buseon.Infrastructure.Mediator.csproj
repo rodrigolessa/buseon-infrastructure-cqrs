@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <PackageId>Buseon.Infrastructure.Mediator</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Rodrigo Lessa</Authors>
+        <Company>Buseon</Company>
+        <Description>Mediator pattern</Description>
+        
+        <PackageTags>Mediator CQRS messaging</PackageTags>
+        <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+</Project>
