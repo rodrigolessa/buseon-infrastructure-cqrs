@@ -5,12 +5,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Buseon.Infrastructure.Mediator;
 
-public class CommandDispatcher(IServiceProvider serviceProvider) : ICommandDispatcher
+public class MyCommandDispatcher(IServiceProvider serviceProvider) : IMyCommandDispatcher
 {
     public async Task DispatchAsync<TCommand>(TCommand command, CancellationToken cancellationToken)
-        where TCommand : ICommand
+        where TCommand : IMyCommand
     {
-        var handler = serviceProvider.GetRequiredService<ICommandHandler<TCommand>>();
+        var handler = serviceProvider.GetRequiredService<IMyCommandHandler<TCommand>>();
 
         await handler.HandleAsync(command, cancellationToken);
     }

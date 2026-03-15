@@ -2,8 +2,8 @@ using Buseon.Infrastructure.CQRS.Abstractions;
 
 namespace Buseon.Infrastructure.Mediator.Abstractions;
 
-public interface IRequestDispatcher
+public interface IMyRequestDispatcher
 {
     Task<TResponse> ProcessAsync<TRequest, TResponse>(TRequest request, CancellationToken cancellationToken = default)
-        where TRequest : IRequest<TResponse>;
+        where TRequest : IMyRequest<TResponse>;
 }

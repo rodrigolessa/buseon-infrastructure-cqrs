@@ -7,14 +7,14 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Buseon.Infrastructure.Mediator;
 
 [ExcludeFromCodeCoverage]
-public class RequestDispatcher(IServiceProvider serviceProvider) : IRequestDispatcher
+public class MyRequestDispatcher(IServiceProvider serviceProvider) : IMyRequestDispatcher
 {
     public async Task<TResponse> ProcessAsync<TRequest, TResponse>(
         TRequest request,
         CancellationToken cancellationToken = default)
-        where TRequest : IRequest<TResponse>
+        where TRequest : IMyRequest<TResponse>
     {
-        var handler = serviceProvider.GetRequiredService<IRequestHandler<TRequest, TResponse>>();
+        var handler = serviceProvider.GetRequiredService<IMyRequestHandler<TRequest, TResponse>>();
 
         return await handler.HandleAsync(request, cancellationToken);
     }
