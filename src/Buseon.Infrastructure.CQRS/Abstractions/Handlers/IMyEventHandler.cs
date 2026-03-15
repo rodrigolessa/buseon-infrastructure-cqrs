@@ -1,3 +1,5 @@
+using Buseon.Infrastructure.Abstractions;
+
 namespace Buseon.Infrastructure.CQRS.Abstractions.Handlers;
 
 /// <summary>

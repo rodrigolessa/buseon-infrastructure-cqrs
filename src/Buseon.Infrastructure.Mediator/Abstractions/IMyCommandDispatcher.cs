@@ -1,9 +1,6 @@
-using Buseon.Infrastructure.CQRS.Abstractions;
-
-namespace Buseon.Infrastructure.Mediator.Abstractions;
-
-public interface IMyCommandDispatcher
-{
-    Task DispatchAsync<TCommand>(TCommand command, CancellationToken cancellationToken)
-        where TCommand : IMyCommand;
-}   
+// namespace Buseon.Infrastructure.Mediator.Abstractions;
+//
+// public interface IMyCommandDispatcher
+// {
+//     Task DispatchAsync<TCommand>(TCommand command, CancellationToken cancellationToken) where TCommand : IMyCommand;
+// }   

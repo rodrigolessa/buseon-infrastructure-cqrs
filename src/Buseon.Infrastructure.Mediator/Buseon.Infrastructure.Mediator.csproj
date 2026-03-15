@@ -18,7 +18,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Buseon.Infrastructure.CQRS\Buseon.Infrastructure.CQRS.csproj" />
+      <ProjectReference Include="..\Buseon.Infrastructure\Buseon.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Registration\" />
     </ItemGroup>
 
 </Project>
