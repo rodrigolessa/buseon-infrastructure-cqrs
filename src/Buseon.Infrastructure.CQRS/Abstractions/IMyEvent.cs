@@ -3,6 +3,6 @@ namespace Buseon.Infrastructure.CQRS.Abstractions;
 /// <summary>
 /// Represents a domain or integration event.
 /// </summary>
-public interface IEvent : IMessage
+public interface IMyEvent : IMyMessage
 {
 }

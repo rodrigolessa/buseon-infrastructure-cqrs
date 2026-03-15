@@ -4,8 +4,8 @@ namespace Buseon.Infrastructure.CQRS.Abstractions.Handlers;
 /// Handles an event.
 /// </summary>
 /// <typeparam name="TEvent">The type of the event.</typeparam>
-public interface IEventHandler<in TEvent>
-    where TEvent : IEvent
+public interface IMyEventHandler<in TEvent>
+    where TEvent : IMyEvent
 {
     Task HandleAsync(TEvent @event, CancellationToken cancellationToken = default);
 }

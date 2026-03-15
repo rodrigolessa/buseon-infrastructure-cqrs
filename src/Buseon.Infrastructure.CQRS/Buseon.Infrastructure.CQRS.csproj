@@ -18,9 +18,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Buseon.Infrastructure" Version="0.1.0" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
         <PackageReference Include="Ulid" Version="1.4.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Buseon.Infrastructure\Buseon.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 namespace Buseon.Infrastructure.CQRS.Abstractions.Handlers;
 
-public interface IRequestHandler<in TRequest, TResponse>
-    where TRequest : IRequest<TResponse>
+public interface IMyRequestHandler<in TRequest, TResponse>
+    where TRequest : IMyRequest<TResponse>
 {
     Task<TResponse> HandleAsync(
         TRequest request,

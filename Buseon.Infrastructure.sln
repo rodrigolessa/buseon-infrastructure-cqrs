@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.Media
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.PipelineBehavior", "src\Buseon.Infrastructure.PipelineBehavior\Buseon.Infrastructure.PipelineBehavior.csproj", "{88FD50C1-2D95-46F4-8494-EA30517CD1E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.Web", "src\Buseon.Infrastructure.Web\Buseon.Infrastructure.Web.csproj", "{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{88FD50C1-2D95-46F4-8494-EA30517CD1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88FD50C1-2D95-46F4-8494-EA30517CD1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88FD50C1-2D95-46F4-8494-EA30517CD1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7AC8B65F-52A6-4496-B0DB-246C91DF2708} = {3A5EF981-2CDB-4347-8DA9-BC1B0D099F5E}
