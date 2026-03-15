@@ -9,12 +9,16 @@
         <Version>0.1.0</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
-        <Description>Intercept execution to inject context and validate inputs</Description>
+        <Description>Intercept execution to inject context and validate inputs - Pipeline is a architectural extension</Description>
 
         <PackageTags>Pipeline behavior Context Input Validation</PackageTags>
         <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
 
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Buseon.Infrastructure.CQRS\Buseon.Infrastructure.CQRS.csproj" />
+    </ItemGroup>
 
 </Project>
