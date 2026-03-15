@@ -4,6 +4,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>Buseon.Infrastructure.Web</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

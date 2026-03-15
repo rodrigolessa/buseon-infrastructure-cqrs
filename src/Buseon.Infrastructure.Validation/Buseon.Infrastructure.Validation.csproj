@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 
-        <PackageId>Buseon.Infrastructure.PipelineBehavior</PackageId>
+        <PackageId>Buseon.Infrastructure.Validation</PackageId>
         <Version>0.1.0</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
@@ -15,10 +15,16 @@
         <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
 
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+        <RootNamespace>Buseon.Infrastructure.PipelineBehavior</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Buseon.Infrastructure.CQRS\Buseon.Infrastructure.CQRS.csproj" />
+      <ProjectReference Include="..\Buseon.Infrastructure\Buseon.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Registration\" />
     </ItemGroup>
 
 </Project>

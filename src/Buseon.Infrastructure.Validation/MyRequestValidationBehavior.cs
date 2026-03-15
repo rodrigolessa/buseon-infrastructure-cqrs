@@ -1,12 +1,11 @@
-using Buseon.Infrastructure.CQRS.Abstractions;
+using Buseon.Infrastructure.Abstractions;
 using Buseon.Infrastructure.Exceptions;
-using Buseon.Infrastructure.PipelineBehavior.Abstractions;
 using FluentValidation;
 
 namespace Buseon.Infrastructure.PipelineBehavior;
 
 /// <summary>
-/// O conceito é Pipeline / Decorator aplicado ao Mediator.
+/// It is the concept of Pipeline / Decorator applied to a Mediator.
 /// </summary>
 /// <typeparam name="TRequest"></typeparam>
 /// <typeparam name="TResponse"></typeparam>
@@ -20,19 +19,20 @@ public sealed class MyRequestValidationBehavior<TRequest, TResponse>
         _validators = validators;
     }
 
-    public async Task<TResponse> Handle(
+    public async Task<TResponse> HandleAsync(
         TRequest request,
-        CancellationToken cancellationToken,
-        RequestHandlerDelegate<TResponse> next)
+        MyRequestHandlerDelegate<TResponse> next,
+        CancellationToken cancellationToken)
     {
         if (!_validators.Any())
             return await next();
 
         var context = new ValidationContext<TRequest>(request);
 
-        // TODO: Replace WhenAll for another with a best performance
+        // TODO: Replace WhenAll for best performance
         var results = await Task.WhenAll(
-            _validators.Select(v => v.ValidateAsync(context, cancellationToken)));
+            _validators
+                .Select(v => v.ValidateAsync(context, cancellationToken)));
 
         var failures = results
             .SelectMany(r => r.Errors)

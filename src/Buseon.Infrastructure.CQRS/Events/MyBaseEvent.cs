@@ -1,3 +1,4 @@
+using Buseon.Infrastructure.Abstractions;
 using Buseon.Infrastructure.CQRS.Abstractions;
 
 namespace Buseon.Infrastructure.CQRS.Events;
