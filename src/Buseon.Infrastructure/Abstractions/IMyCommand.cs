@@ -1,4 +1,4 @@
-namespace Buseon.Infrastructure.CQRS.Abstractions;
+namespace Buseon.Infrastructure.Abstractions;
 
 /// <summary>
 /// Represents a command that changes system state.

@@ -1,4 +1,4 @@
-namespace Buseon.Infrastructure.CQRS.Abstractions;
+namespace Buseon.Infrastructure.Abstractions;
 
 /// <summary>
 /// Represents a query that returns data without changing system state.
