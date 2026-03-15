@@ -13,6 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Files", "Project Fi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure", "src\Buseon.Infrastructure\Buseon.Infrastructure.csproj", "{E21B9B64-A32E-4FEB-84DD-D3692068792E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pull Request Templates", "Pull Request Templates", "{7AC8B65F-52A6-4496-B0DB-246C91DF2708}"
+	ProjectSection(SolutionItems) = preProject
+		.github\PULL_REQUEST_TEMPLATE\bug_fix.md = .github\PULL_REQUEST_TEMPLATE\bug_fix.md
+		.github\PULL_REQUEST_TEMPLATE\feature.md = .github\PULL_REQUEST_TEMPLATE\feature.md
+		.github\PULL_REQUEST_TEMPLATE\refactor.md = .github\PULL_REQUEST_TEMPLATE\refactor.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.Mediator", "src\Buseon.Infrastructure.Mediator\Buseon.Infrastructure.Mediator.csproj", "{F7F44DEA-2F08-45CD-A0B9-8894D98B91E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.Validation", "src\Buseon.Infrastructure.Validation\Buseon.Infrastructure.Validation.csproj", "{88FD50C1-2D95-46F4-8494-EA30517CD1E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.WebContext", "src\Buseon.Infrastructure.WebContext\Buseon.Infrastructure.WebContext.csproj", "{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buseon.Infrastructure.Logging", "src\Buseon.Infrastructure.Logging\Buseon.Infrastructure.Logging.csproj", "{177E1207-5EC6-4C32-BD52-23A7B9EB8904}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +45,24 @@ Global
 		{E21B9B64-A32E-4FEB-84DD-D3692068792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E21B9B64-A32E-4FEB-84DD-D3692068792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E21B9B64-A32E-4FEB-84DD-D3692068792E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7F44DEA-2F08-45CD-A0B9-8894D98B91E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F44DEA-2F08-45CD-A0B9-8894D98B91E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F44DEA-2F08-45CD-A0B9-8894D98B91E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7F44DEA-2F08-45CD-A0B9-8894D98B91E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88FD50C1-2D95-46F4-8494-EA30517CD1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FD50C1-2D95-46F4-8494-EA30517CD1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FD50C1-2D95-46F4-8494-EA30517CD1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FD50C1-2D95-46F4-8494-EA30517CD1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB305FF-DA44-4FC8-8EC7-EC73DFF82D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177E1207-5EC6-4C32-BD52-23A7B9EB8904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177E1207-5EC6-4C32-BD52-23A7B9EB8904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177E1207-5EC6-4C32-BD52-23A7B9EB8904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177E1207-5EC6-4C32-BD52-23A7B9EB8904}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AC8B65F-52A6-4496-B0DB-246C91DF2708} = {3A5EF981-2CDB-4347-8DA9-BC1B0D099F5E}
 	EndGlobalSection
 EndGlobal

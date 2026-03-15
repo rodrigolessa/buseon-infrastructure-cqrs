@@ -1,9 +1,9 @@
-namespace Buseon.Infrastructure.CQRS.Abstractions;
+namespace Buseon.Infrastructure.Abstractions;
 
 /// <summary>
 /// Marker interface for all CQRS messages (commands, queries, events).
 /// </summary>
-public interface IMessage
+public interface IMyMessage
 {
     string MessageId { get; set; }
     string AggregateId { get; set; }

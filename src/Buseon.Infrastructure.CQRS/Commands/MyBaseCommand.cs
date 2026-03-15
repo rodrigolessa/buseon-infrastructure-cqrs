@@ -4,7 +4,7 @@ using Buseon.Infrastructure.CQRS.Abstractions;
 
 namespace Buseon.Infrastructure.CQRS.Commands;
 
-public abstract class MyBaseCommand : ICommand
+public abstract class MyBaseCommand : IMyCommand
 {
     public string MessageId { get; set; }
     public string AggregateId { get; set; }

@@ -5,21 +5,22 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 
-        <PackageId>Buseon.Infrastructure</PackageId>
+        <PackageId>Buseon.Infrastructure.Validation</PackageId>
         <Version>0.1.1</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
-        <Description>Basic infrastructure for Buseon platform</Description>
+        <Description>Intercept execution to inject context and validate inputs - Pipeline is a architectural extension</Description>
 
-        <PackageTags>Application provider DateTime provider</PackageTags>
+        <PackageTags>Pipeline behavior Context Input Validation</PackageTags>
         <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
 
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+        <RootNamespace>Buseon.Infrastructure.Validation</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="FluentValidation" Version="12.1.1" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
+      <ProjectReference Include="..\Buseon.Infrastructure\Buseon.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
