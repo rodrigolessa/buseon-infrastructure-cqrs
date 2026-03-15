@@ -1,4 +1,4 @@
-namespace Buseon.Infrastructure.Web.RequestsContext;
+namespace Buseon.Infrastructure.WebContext.Abstractions;
 
 /// <summary>
 /// This will be populated automatically by the pipeline

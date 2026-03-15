@@ -4,6 +4,17 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <PackageId>Buseon.Infrastructure.Logging</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Rodrigo Lessa</Authors>
+        <Company>Buseon</Company>
+        <Description>Basic pipeline behavior to create a structure log</Description>
+        
+        <PackageTags>Structure Logging</PackageTags>
+        <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
+
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>

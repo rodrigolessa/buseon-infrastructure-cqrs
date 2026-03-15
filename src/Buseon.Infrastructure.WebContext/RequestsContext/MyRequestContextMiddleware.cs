@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 
-namespace Buseon.Infrastructure.Web.RequestsContext;
+namespace Buseon.Infrastructure.WebContext.RequestsContext;
 
 public class MyRequestContextMiddleware(RequestDelegate next)
 {

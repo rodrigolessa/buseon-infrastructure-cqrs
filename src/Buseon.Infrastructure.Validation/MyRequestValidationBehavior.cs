@@ -2,7 +2,7 @@ using Buseon.Infrastructure.Abstractions;
 using Buseon.Infrastructure.Exceptions;
 using FluentValidation;
 
-namespace Buseon.Infrastructure.PipelineBehavior;
+namespace Buseon.Infrastructure.Validation;
 
 /// <summary>
 /// It is the concept of Pipeline / Decorator applied to a Mediator.

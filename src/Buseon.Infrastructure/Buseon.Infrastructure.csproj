@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
 
         <PackageId>Buseon.Infrastructure</PackageId>
-        <Version>0.1.0</Version>
+        <Version>0.1.1</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
         <Description>Basic infrastructure for Buseon platform</Description>
@@ -14,7 +14,7 @@
         <PackageTags>Application provider DateTime provider</PackageTags>
         <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
 
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>

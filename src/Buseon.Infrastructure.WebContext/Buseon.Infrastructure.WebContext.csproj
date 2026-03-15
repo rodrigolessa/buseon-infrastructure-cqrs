@@ -4,11 +4,27 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Buseon.Infrastructure.Web</RootNamespace>
+
+        <PackageId>Buseon.Infrastructure.WebContext</PackageId>
+        <Version>0.1.0</Version>
+        <Authors>Rodrigo Lessa</Authors>
+        <Company>Buseon</Company>
+        <Description>Basic pipeline behavior to enrich http requests</Description>
+
+        <PackageTags>Enrich HTTP Context</PackageTags>
+        <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
+
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        
+        <RootNamespace>Buseon.Infrastructure.WebContext</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Buseon.Infrastructure\Buseon.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

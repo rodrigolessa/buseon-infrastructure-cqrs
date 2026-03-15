@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
 
         <PackageId>Buseon.Infrastructure.CQRS</PackageId>
-        <Version>0.1.1</Version>
+        <Version>0.1.2</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
         <Description>Separate commands from queries, write and read operations - CQRS abstractions and infrastructure for Buseon platform</Description>
@@ -14,7 +14,7 @@
         <PackageTags>CQRS abstractions Messaging event-sourcing</PackageTags>
         <RepositoryUrl>https://github.com/rodrigolessa/buseon-infrastructure-cqrs</RepositoryUrl>
 
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
