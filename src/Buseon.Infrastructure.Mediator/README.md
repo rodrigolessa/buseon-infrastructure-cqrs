@@ -1,42 +1,76 @@
 # My Mediator
 
-My own mediator implementation separates the public API from the internal execution pipeline:
+My own Mediator with compiler handler implementation. Its separates the public API from the internal execution pipeline:
 It is good for:
 - high performance
 - clean pipeline behaviors
-- minimal reflection
-- good DI resolution
+- no reflection, but complex DI resolution
+  - Discover handlers at startup
+  - Build compiled delegates
+  - Store them in a dispatch table
+  - Execute them with O(1) lookup
+
+---
+
+The key idea is:
+
+> Build the **entire execution pipeline at startup** and execute **compiled delegates** at runtime.
+
+This eliminates:
+
+- `IServiceProvider`
+- reflection
+- runtime handler resolution
+
+The runtime cost becomes **just a dictionary lookup + delegate invocation**.
+
+---
 
 ## Public API (simple for the user)
 
 ```
-public interface IMediator
+public interface IRequest<TResponse> { }
+
+public interface IRequestHandler<TRequest, TResponse>
+    where TRequest : IRequest<TResponse>
 {
-    Task<TResponse> SendAsync<TResponse>(
-        IMyRequest<TResponse> request,
-        CancellationToken cancellationToken = default);
-}
-```
-
-- Only TResponse is generic
-- Request is typed as IMyRequest<TResponse>
-- The concrete request type is lost at compile-time
-- But is nice and clean
-
-## Internal execution contract
-Inside the mediator implementation you use a fully typed execution pipeline.
-
-```
-public interface IRequestExecutor<TRequest, TResponse>
-    where TRequest : IMyRequest<TResponse>
-{
-    Task<TResponse> Execute(
+    Task<TResponse> HandleAsync(
         TRequest request,
         CancellationToken cancellationToken);
 }
 ```
+---
 
-- Stronger typing (more type-safe)
-- Easier DI resolution
-- Avoids runtime reflection
-- Works better with pipeline behaviors
+## Dispatch Table
+
+The mediator will store compiled delegates.
+
+```
+public delegate Task<object?> RequestHandlerDelegate(
+    object request,
+    CancellationToken ct);
+
+public sealed class HandlerRegistry
+{
+    private readonly Dictionary<Type, RequestHandlerDelegate> _handlers = new();
+}
+```
+---
+
+## Compiling Handler Delegates
+
+We compile invocation logic once at startup.
+
+---
+
+## Adding Pipeline Behaviors
+
+You wrap the delegate:
+
+```
+RequestHandlerDelegate pipeline =
+    validation(
+        logging(
+            metrics(
+                handler)));
+```
