@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
 
         <PackageId>Buseon.Infrastructure</PackageId>
-        <Version>0.1.1</Version>
+        <Version>0.2.0</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
         <Description>Basic infrastructure for Buseon platform</Description>

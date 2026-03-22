@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
 
         <PackageId>Buseon.Infrastructure.Mediator</PackageId>
-        <Version>0.2.0</Version>
+        <Version>0.3.0</Version>
         <Authors>Rodrigo Lessa</Authors>
         <Company>Buseon</Company>
         <Description>Decoupling request from handler - Mediator pattern</Description>
